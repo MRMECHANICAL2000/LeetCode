@@ -21,8 +21,14 @@ Learning:
 		**IMPORTANT** **IMPORTANT**
 
     Optimal: **IMPORTANT**
-        Approach -> by using iterative approach **IMPORTANT** **IMPORTANT**
-					look the code to understand very vey simple
+        Approach 1 -> by using iterative approach **IMPORTANT** **IMPORTANT**
+					  look the code to understand very vey simple
+
+		Approach 2 -> using BIT Manupalation, **IMPORTANT** **IMPORTANT**
+					  if you look the video below you will find logic but the real trick is on generating
+					  the bitmask and maitaining its padding zero , ie. need to maintain 0001 not 1 alone
+					  for that you need to look into range.
+					  https://youtu.be/9oPNGofa1pI 
         			
 """	
 
@@ -41,19 +47,29 @@ class Solution:
         dfs([],0)
         return(solution)
 
-    #Optimal Approach -  Iterative
+    #Optimal Approach 1 -  Iterative
     def subsets(self, nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        
+
         res = [[]]
         nums.sort()
         for num in nums: 
             res += [ i + [num] for i in res]
         return res
 
+    #Optimal Approach 2 - BitManupulation
+    def subsets(self, nums):
+        n=len(nums)
+        output=[]
+        
+        for i in range(2**n,2**(n+1)): #**IMPORTANT** range is important **IMPORTANT**
+            bitmask=bin(i)[3:]
+            output.append([nums[x] for x in range(n) if bitmask[x]=="1"])
+
+        return(output)
 
 
 
