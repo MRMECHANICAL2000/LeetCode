@@ -23,6 +23,10 @@ Learning:
 					if exist means there is an array from exist index to current Index summing up to k
  					Watch video for explanation **IMPORTANT**
 
+ 					**IMPORTATN** Understand this approach well. it's updated version of prefix array
+ 					question.Must watch the video and understand it.Mistake made while teaching ECE 
+ 					**IMPORTANT**
+
 """	
 
 from collections import defaultdict            #**IMPORTANT** Collection's' spelling don't forget
