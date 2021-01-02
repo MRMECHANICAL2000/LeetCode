@@ -15,6 +15,9 @@ Learning:
 		Approach -> using math and recursion. if pow=0 return 1 ,if pow=-ve return (1/result)
 		            if power is even (x)^n = (x/2 * x/2)^(n/2)
 		            if power is odd  (x)^n = (x)^n . x = (x/2 * x/2)^((n-1)/2) . x
+			    
+			    **IMPORTANT** Dont forget (x)^n = (x/2 * x/2)^(n/2) not x^(n/2) * x^(n/2)
+			    same mistake while teaching Zoho anna and Ece students. prepare this well
 """	
 
 class Solution:
