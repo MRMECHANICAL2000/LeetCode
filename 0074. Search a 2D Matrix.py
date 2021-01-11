@@ -14,7 +14,7 @@ Learning:
 		Approach -> since the matrix looks like sorted array split into multiple sub array and kept
 		            at each row. if it is an single array we can use binary search. since its like 
 		            row in matrix to do binary search we need its row,col value , that we find using
-		            row_index=min//row_length and col_index=min%row_length. think twise you can 
+		            row_index=mid//row_length and col_index=mid%row_length. think twise you can 
 		            understand it . **IMPORTANT**
 """	
 
