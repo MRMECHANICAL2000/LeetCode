@@ -1,14 +1,5 @@
 """    
-Key : Must learn about function tools lru_cache. similair to implementing an hashTable, it stores both
-	  function name argument passed and value returned for that arugment by the function. when next time
-	  same argument passed it returns the value instead of recalculating it again.
-	  https://www.geeksforgeeks.org/python-functools-lru_cache/
-	
-	  **IMPORTANT** **IMPORTAT**
-		
-	  lru_cache + Recursion = 157 MB
-	  DP Table  + looping   = 16.7 MB
-
+Key : Entirely same code as minimum insersion to make given string palindrome
 
 """  
 
