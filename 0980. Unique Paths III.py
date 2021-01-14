@@ -4,6 +4,13 @@ Key : look question careffully we cant use DP here because they are asking us to
       there are 6 movable square then the solution you found is not considered. only the solution that 
       pass through all 6 movable square is considered.
       **IMPORTANT** 
+      
+      Zoho Anna Idea: for previous questoin we can reach a box from only two direction either top to
+      down or left to right. so we added values from (i-1,j) and (i,j-1). but for this question it
+      is given that we can reach a box from all 4 direction. so we add values from all the side.
+      (i-1,j) , (i,j-1) , (i+1,j) , (i,j+1). but we cant applay this approach to this question
+      because its said we can reach a box only ones also start is not at (0,0) so just remember
+      we can do like this.
 """
 
 """
